@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+   <modules>
+      <MageProfis_PaypalExpress>
+         <active>true</active>
+         <codePool>local</codePool>
+      </MageProfis_PaypalExpress>
+   </modules>
+</config>

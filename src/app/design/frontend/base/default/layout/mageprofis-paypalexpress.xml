@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<layout>
+    <paypal_express_review>
+        <reference name="paypal.express.review">
+            <action method="setTemplate">
+                <template>checkout/onepage/paypalexpress/review.phtml</template>
+            </action>
+            <action method="unsetChild">
+                <alias>agreements</alias>
+            </action>
+            <block type="magesetup/checkout_agreements" name="magesetup.checkout.agreements" as="agreements"
+                   template="magesetup/checkout/onepage/agreements.phtml"/>
+        </reference>
+    </paypal_express_review>
+    
+    <paypal_express_review_details>
+        <reference name="root">
+            <action method="addItemRender">
+                <type>default</type>
+                <block>checkout/cart_item_renderer</block>
+                <template>magesetup/checkout/onepage/review/item.phtml</template>
+            </action>
+            <action method="addItemRender">
+                <type>grouped</type>
+                <block>checkout/cart_item_renderer_grouped</block>
+                <template>magesetup/checkout/onepage/review/item.phtml</template>
+            </action>
+            <action method="addItemRender">
+                <type>configurable</type>
+                <block>checkout/cart_item_renderer_configurable</block>
+                <template>magesetup/checkout/onepage/review/item.phtml</template>
+            </action>
+            <action method="addItemRender">
+                <type>bundle</type>
+                <block>bundle/checkout_cart_item_renderer</block>
+                <template>magesetup/checkout/onepage/review/item.phtml</template>
+            </action>
+            <action method="addItemRender">
+                <type>downloadable</type>
+                <block>downloadable/checkout_cart_item_renderer</block>
+                <template>magesetup/checkout/onepage/review/item.phtml</template>
+            </action>
+        </reference>
+    </paypal_express_review_details>
+</layout>
+

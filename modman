@@ -1,0 +1,4 @@
+src/app/code/local/MageProfis/PaypalExpress                                         app/code/local/MageProfis/PaypalExpress
+src/app/design/frontend/base/default/template/checkout/onepage/paypalexpress        app/design/frontend/base/default/template/checkout/onepage/paypalexpress
+src/app/design/frontend/base/default/layout/mageprofis-paypalexpress.xml            app/design/frontend/base/default/layout/mageprofis-paypalexpress.xml
+src/app/etc/modules/MageProfis_PaypalExpress.xml                                    app/etc/modules/MageProfis_PaypalExpress.xml
