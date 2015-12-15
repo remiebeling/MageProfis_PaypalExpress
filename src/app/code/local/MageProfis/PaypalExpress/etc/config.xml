@@ -16,6 +16,21 @@
                 <class>MageProfis_PaypalExpress_Block</class>
             </mppaypalexpress>
         </blocks>
+        <models>
+            <mppaypalexpress>
+                <class>MageProfis_PaypalExpress_Model</class>
+            </mppaypalexpress>
+        </models>
+        <events>
+            <controller_action_predispatch_paypal_express_placeOrder>
+                <observers>
+                    <mageprofis_paypalexpress_check_agreements>
+                        <class>mppaypalexpress/observer</class>
+                        <method>checkAgreements</method>
+                    </mageprofis_paypalexpress_check_agreements>
+                </observers>
+            </controller_action_predispatch_paypal_express_placeOrder>
+        </events>
     </global>
     <adminhtml>
         <acl>
